@@ -1,4 +1,4 @@
-Cypress.Commands.add("fillMandatoryFieldsAndSubmit", function () {
+Cypress.Commands.add("fillMandatoryFieldsAndSubmit", () => {
   cy.get("#firstName").type("Fabi");
   cy.get("#lastName").type("Vaz");
   cy.get("#email").type("fabiellivaz@exemplo.com");
