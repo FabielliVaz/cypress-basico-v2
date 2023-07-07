@@ -42,7 +42,7 @@ describe("Central de Atendimento ao Cliente TAT", function () {
 
   Cypress._.times(2, () => {
     it("Campo telefone continua vazio quando não preenchido com valor numérico", () => {
-      cy.get("#phone").type("yagbuscgua").should("have.value", "");
+      cy.get("#phone").type("text").should("have.value", "");
     });
   });
 
